@@ -55,7 +55,7 @@ export default function HomeView({
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight leading-[1.1] text-white">
                 Justice for the{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-500 underline decoration-gold-500/50 decoration-wavy decoration-1">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-500">
                   Injured
                 </span>{" "}
                 and Wronged.
