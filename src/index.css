@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Bento Grid Dark Theme Palette */
+  --color-navy-950: #0A1120; /* Deep bento dark backdrop */
+  --color-navy-900: #141E33; /* Slate primary card bg */
+  --color-navy-800: #1B263B; /* Alternating/Highlight bento bg */
+  --color-navy-700: #24314A; /* Hover accent dark */
+  --color-gold-500: #B89150; /* Premium Brand Sand Gold */
+  --color-gold-600: #A37E3D; /* Deeper Antique Gold */
+  --color-gold-400: #CAA452; /* Accent Gold */
+  --color-cream-100: #0A1120; /* Keep selector mapped to bento dark */
+  --color-cream-200: #0D1627; /* Slightly distinct bento section */
+  --color-slate-900: #0A1120;
+}
+
+@layer base {
+  body {
+    font-style: normal;
+    background-color: #0A1120; /* Luxury Bento Dark Backdrop */
+    color: #cbd5e1; /* Soft readable slate gray */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, .font-serif-header {
+    font-family: var(--font-serif);
+    color: #f8fafc !important; /* Crisp white titles */
+  }
+
+  p {
+    color: #94a3b8;
+  }
+
+  /* Make sure inputs and selectors stand out on dark backgrounds */
+  input, textarea, select {
+    background-color: #0A1120 !important;
+    border-color: #24314A !important;
+    color: #f1f5f9 !important;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #64748b !important;
+  }
+}
+
+/* Custom scrollbars matching aesthetic gold */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #B89150;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A37E3D;
+}
+
+/* Bento Theme Compatibility Overrides */
+.bg-white {
+  background-color: #141E33 !important;
+  border-color: rgba(148, 163, 184, 0.12) !important;
+  color: #f1f5f9 !important;
+}
+
+.bg-white p, .bg-white span, .bg-white li, .bg-white div, .bg-white h3, .bg-white leading-relaxed {
+  color: #cbd5e1;
+}
+
+.text-navy-950 {
+  color: #f8fafc !important;
+}
+
+.text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+.text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+.text-slate-500 {
+  color: #64748b !important;
+}
+
+.bg-cream-100 {
+  background-color: #0A1120 !important;
+}
+
+.bg-cream-200 {
+  background-color: #0D1627 !important;
+}
+
+/* Bento Dot & Grid Aesthetic Overlay patterns */
+.bento-pattern {
+  background-image: radial-gradient(circle at center, rgba(184, 145, 80, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bento-glow-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(184, 145, 80, 0.1) !important;
+}
+
+.bento-glow-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(184, 145, 80, 0.4) !important;
+  box-shadow: 0 10px 30px -10px rgba(184, 145, 80, 0.15);
+}
+
+.bento-stat-gold {
+  background-color: #B89150 !important;
+  color: #0A1120 !important;
+}
+
+.bento-stat-gold * {
+  color: #0A1120 !important;
+}

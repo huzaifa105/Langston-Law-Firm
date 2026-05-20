@@ -1,0 +1,6 @@
+{
+  "name": "Langston Law Firm",
+  "description": "Experienced legal representation for injury victims in Longview, Texas. Led by attorney Keith L. Langston, specializing in Personal Injury, Class Actions, Environmental Litigation, and Product Liability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
